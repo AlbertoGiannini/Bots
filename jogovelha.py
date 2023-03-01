@@ -52,7 +52,7 @@ async def jogovelha(ctx):
       else: 
         if ctx.author.id !=  players[0] and ctx.author.id != players[1]:
             print('ID ', ctx.author.id)
-            await ctx.send('{} não se mete corno'.format(ctx.author.mention))
+            await ctx.send('{} Já existem 2 jogadores!'.format(ctx.author.mention))
 
         else: 
           matriz = []
