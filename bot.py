@@ -66,41 +66,6 @@ async def jogovelha(ctx):
   await view.wait()
 
 
-
-@bot.command()
-async def aa(ctx):
-  rand = randint(0, 100)
-  embed = discord.Embed(title='CARA OU COROA', description='?cara ou ?coroa')
-  embed.set_image(url='http://lh3.ggpht.com/-6KfOSzwRvkw/T2TD1zZnjnI/AAAAAAAAOVY/7ZJg4qCW0-k/s0/1real.gif')
-  await ctx.send(embed = embed)
-
-  @bot.command()
-  async def cara(ctx):
-    rand = randint(0, 100)
-    if rand % 2 == 0:
-      cara = discord.Embed(title='VOCÊ PERDEU!')
-      cara.set_image(url='http://www.moedasdobrasil.com.br/moedas/images/moedas1/A00007A.JPG')
-      print(rand)
-      await ctx.send(embed = cara)
-    else:
-      coroa = discord.Embed(title='VOCÊ GANHOU!')
-      coroa.set_image(url='http://www.moedasdobrasil.com.br/moedas/images/moedas1/R00007A.JPG')
-      await ctx.send(embed = coroa)
-
-  @bot.command()
-  async def coroa(ctx):
-    rand = randint(0, 100)
-    if rand % 2 != 0:
-      coroa = discord.Embed(title='VOCÊ GANHOU!')
-      coroa.set_image(url='http://www.moedasdobrasil.com.br/moedas/images/moedas1/R00007A.JPG')
-      print(rand)
-      await ctx.send(embed = coroa)
-    else:
-      cara = discord.Embed(title='VOCÊ PERDEU!')
-      cara.set_image(url='http://www.moedasdobrasil.com.br/moedas/images/moedas1/A00007A.JPG')
-      await ctx.send(embed = cara)
- 
-
 @bot.command()
 async def coinflip(ctx):
   view = Flip()
