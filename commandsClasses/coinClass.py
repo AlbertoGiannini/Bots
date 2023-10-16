@@ -11,6 +11,7 @@ class Flip(discord.ui.View):
   
   @discord.ui.button(label='Cara', style=discord.ButtonStyle.green)
   async def cara(self, interaction: discord.Interaction, button: discord.ui.Button):
+    #disable buttons after click
     #for child in self.children:
     #  child.disabled = True
     if randint(1, 2) % 2 != 0:
@@ -21,6 +22,7 @@ class Flip(discord.ui.View):
       await interaction.response.edit_message(embed=self.moedacoroa, view=self)
   @discord.ui.button(label='Coroa', style=discord.ButtonStyle.green)
   async def coroa(self, interaction: discord.Interaction, button: discord.ui.Button):
+    #disable buttons after click
     #for child in self.children:
     # child.disabled = True
     if randint(1, 2) % 2 == 0:
