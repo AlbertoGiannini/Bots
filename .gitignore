@@ -1,0 +1,9 @@
+# Ignore files
+0918.mp3
+commands.py
+jogovelhaV2.py
+
+# Ignore the directory
+discord/
+_pycache_/
+audiotracks/

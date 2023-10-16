@@ -26,4 +26,4 @@ async def on_message(message):
     return
   await bot.process_commands(message)
 
-bot.run('MTAwNzI5NTM5MDM4ODg1NDk4Ng.Gy-ju4.9boMVgOTnU72Ix7hiZI52iWPYxyDgflXt36e7M')
+bot.run('TOKEN')
